@@ -1,5 +1,3 @@
-"""
-
 print("Wie heisst du?")
 name = input()
 print("Hallo", name)
@@ -59,15 +57,15 @@ def guess_num():
         try:
             guess = int(guess)
         except ValueError:
-            print("BITTE GIB EINE ZAHL EIN NICHTS ANDERES")
+            print("BITTE GIB EINE ZAHL EIN - NICHTS ANDERES")
             continue
 
         if guess < number:
-            print("Zahl ist grösser als")
+            print("Zahl ist grösser als:")
         elif guess > number:
-            print("Zahl ist kleiner als")
+            print("Zahl ist kleiner als:")
         else:
-            print("Gut gemacht du hast es erraten.")
+            print("Gut gemacht. Du hast es erraten.")
             play_again = input("Willst du nochmals spielen? antworte mit Ja oder Nein ")
             if play_again == "Ja":
                 number = random.randint(0, 100)
@@ -168,7 +166,6 @@ def main():
 
 if __name__ == "__main__":
     main()
-
 
 
 def berechne_quersumme(num):
@@ -287,7 +284,7 @@ input()
 
 tur.rt(45)
 tur.fd(100)
-"""
+
 
 import turtle
 f = turtle.Screen()
@@ -314,7 +311,6 @@ s.rt(270)
 s.fd(30)
 s.rt(270)
 s.fd(30)
-
 
 
 input()
